@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label color="secondary">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name"></ion-input>
+
+      </ion-item>
+
+      <ion-item>
+          <ion-label color="primary">Last Name</ion-label>
+          <ion-input type="text" [(ngModel)]="surname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="danger">Age</ion-label>
+            <ion-input type="text" [(ngModel)]="age"></ion-input>
+          </ion-item>
+       
+        <ion-item>
+            <ion-label>Gender</ion-label>
+            <ion-input type="text" [(ngModel)]="gender"></ion-input>
+          </ion-item>
+    
+  <ion-button color="primary" expand="block" shape="round" (click)="nextpage()">Submit</ion-button>
+ 
+  <ion-slides>
+      <ion-slide>
+        <h1>{{name}}</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>{{surname}}</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>{{age}}</h1>
+      </ion-slide>
+      <ion-slide>
+          <h1>{{gender}}</h1>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+
